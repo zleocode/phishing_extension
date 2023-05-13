@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "version": "0.0.3",
+  "name": "Extensao Anti Phishing",
+  "description": "Extensao para teste",
+  "author": "Leonardo Faganelli",
+  
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting",
+    "storage"
+    
+    
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*",
+        "http://*/*"
+      ],
+      "js": [
+        "extensao.js"
+      ]
+      
+    }
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "logo.png",
+    "default_title": "Estensao Anti Phishing"
+    
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+"host_permissions": [
+    "<all_urls>"
+]
+}
