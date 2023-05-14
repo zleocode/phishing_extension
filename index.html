@@ -5,64 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <script src="dominios.js" defer></script>
   <script src="extensao.js" defer></script>
+  <link rel="stylesheet" href="style.css">
   
   <title>Document</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 15px;
-      padding: 10px;
-      border: 5px solid black;
-      
-     
-    }
-    
-    h1 {
-      text-align: center;
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-    
-    p {
-      margin-top: 0;
-      margin-bottom: 5px;
-    }
-    
-    .success {
-      color: green;
-    }
-    
-    .error {
-      color: red;
-    }
-    
-    .warning {
-      color: yellow;
-    
-    }
-    #resultado {
-      text-align: center;
-      border: 5px solid black;
-      background-color: black;
-      margin: 10px 0;
-      padding: 1px;}
-   .hidden {
-        display: none;
-      }
-      
-      
-    
-  </style>
+  
 </head>
 <body>
   <h1>Extension Checker Phishing</h1>
   <p>Insira o URL do site que deseja verificar :</p>
   <form id="form">
     <input type="text" name="campo" id="campo" placeholder="Link"/>
-    <input type="submit" value="Verificar">
+    <button type="submit" value="Verificar">Verificar</button>
   </form>
   <div id="resultado" class="hidden"></div>
-  
 </body>
 </html>

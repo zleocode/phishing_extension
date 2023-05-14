@@ -10,15 +10,18 @@
     "activeTab",
     "tabs",
     "scripting",
-    "storage"
-    
-    
+    "storage",
+    "host",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://*/*",
-        "http://*/*"
+        "http://*/*",
+        "<all_urls>"
       ],
       "js": [
         "extensao.js"
@@ -35,7 +38,7 @@
   "icons": {
     "128": "logo.png"
   },
-"host_permissions": [
+  "host_permissions": [
     "<all_urls>"
-]
+  ]
 }

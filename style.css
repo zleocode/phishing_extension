@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px; 
+    max-height: 650px;   
+    min-width: 230px;   
+
+}
+
+h1 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+form button{
+    height: 100%;
+    border: none;
+    padding: 0.6rem;
+    margin: 0.5rem 0;
+
+    border-radius: 4px;
+
+}
+
+.success {
+    color: green;
+    background-color: rgb(161, 230, 161);
+}
+
+.error {
+    color: rgb(247, 247, 247);
+    background-color: rgb(253, 114, 114);
+}
+
+.warning {
+    color: rgb(27, 27, 27);
+    background-color: rgb(248, 248, 95);
+
+}
+
+#resultado {    
+    margin: 0.5rem 0;
+    padding: 0.5rem 4px;
+    min-height: 2.3rem;
+
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
